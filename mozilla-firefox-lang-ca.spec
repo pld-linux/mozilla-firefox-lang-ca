@@ -3,12 +3,12 @@ Summary(ca):	Recursos catalans per Mozilla-firefox
 Summary(es):	Recursos catalanes para Mozilla-firefox
 Summary(pl):	Kataloñskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-ca
-Version:	1.0.2
-Release:	0.1
+Version:	1.0.7
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca-AD.xpi
-# Source0-md5:	82273f41c053dcaa32fbd8d602eced4a
+# Source0-md5:	459a89589cce5b8258fef457f71339a5
 Source1:	%{name}-installed-chrome.txt
 URL:		http://www.softcatala.org/projectes/mozilla/
 BuildRequires:	unzip
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_chromedir},%{_firefoxdir}/defaults/profile}
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_libdir}
-mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/* $RPM_BUILD_ROOT%{_chromedir}
+mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/ca-AD.jar $RPM_BUILD_ROOT%{_chromedir}/ca-ES.jar
 mv -f $RPM_BUILD_ROOT%{_libdir}/*.rdf $RPM_BUILD_ROOT%{_firefoxdir}/defaults/profile
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
@@ -58,7 +58,7 @@ cat %{_firefoxdir}/chrome/*-installed-chrome.txt >%{_firefoxdir}/chrome/installe
 
 %files
 %defattr(644,root,root,755)
-%{_chromedir}/ca-AD.jar
+%{_chromedir}/ca-ES.jar
 %{_chromedir}/%{name}-installed-chrome.txt
 # file conflict:
 #%{_firefoxdir}/defaults/profile/*.rdf
