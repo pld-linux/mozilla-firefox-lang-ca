@@ -3,12 +3,12 @@ Summary(ca):	Recursos catalans per Mozilla-firefox
 Summary(es):	Recursos catalanes para Mozilla-firefox
 Summary(pl):	Kataloñskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-ca
-Version:	1.0.7
+Version:	1.5
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca-AD.xpi
-# Source0-md5:	459a89589cce5b8258fef457f71339a5
+Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
+# Source0-md5:	58ca5cc51582ab37aa7b1605f0d91679
 Source1:	%{name}-installed-chrome.txt
 URL:		http://www.softcatala.org/projectes/mozilla/
 BuildRequires:	unzip
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_chromedir},%{_firefoxdir}/defaults/profile}
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_libdir}
-mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/ca-AD.jar $RPM_BUILD_ROOT%{_chromedir}/ca-ES.jar
+mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/ca.jar $RPM_BUILD_ROOT%{_chromedir}/ca-ES.jar
 mv -f $RPM_BUILD_ROOT%{_libdir}/*.rdf $RPM_BUILD_ROOT%{_firefoxdir}/defaults/profile
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
