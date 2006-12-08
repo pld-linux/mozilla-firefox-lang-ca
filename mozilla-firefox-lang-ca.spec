@@ -11,8 +11,6 @@ Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linu
 # Source0-md5:	ee53889ab6e80be237ddab759fd03c8e
 URL:		http://www.softcatala.org/projectes/mozilla/
 BuildRequires:	unzip
-Requires(post,postun):	mozilla-firefox >= %{version}
-Requires(post,postun):	textutils
 Requires:	mozilla-firefox >= %{version}
 Provides:	mozilla-firefox-lang-resources = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
