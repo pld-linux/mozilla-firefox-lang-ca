@@ -3,12 +3,12 @@ Summary(ca):	Recursos catalans per Mozilla-firefox
 Summary(es):	Recursos catalanes para Mozilla-firefox
 Summary(pl):	Kataloñskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-ca
-Version:	1.5.0.8
+Version:	2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
-# Source0-md5:	5570e6e51a06e2a6c9d14aaa11a92ee1
+# Source0-md5:	ee53889ab6e80be237ddab759fd03c8e
 URL:		http://www.softcatala.org/projectes/mozilla/
 BuildRequires:	unzip
 Requires(post,postun):	mozilla-firefox >= %{version}
