@@ -1,7 +1,7 @@
 Summary:	Catalan resources for Mozilla-firefox
-Summary(ca.UTF-8):   Recursos catalans per Mozilla-firefox
-Summary(es.UTF-8):   Recursos catalanes para Mozilla-firefox
-Summary(pl.UTF-8):   Katalońskie pliki językowe dla Mozilli-firefox
+Summary(ca.UTF-8):	Recursos catalans per Mozilla-firefox
+Summary(es.UTF-8):	Recursos catalanes para Mozilla-firefox
+Summary(pl.UTF-8):	Katalońskie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-ca
 Version:	2.0.0.1
 Release:	1
