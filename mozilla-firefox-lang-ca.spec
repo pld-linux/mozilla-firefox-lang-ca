@@ -1,15 +1,15 @@
 %define		_lang		ca
-Summary:	Catalan resources for Mozilla-firefox
-Summary(ca.UTF-8):	Recursos catalans per Mozilla-firefox
-Summary(es.UTF-8):	Recursos catalanes para Mozilla-firefox
-Summary(pl.UTF-8):	Katalońskie pliki językowe dla Mozilli-firefox
+Summary:	Catalan resources for Firefox
+Summary(ca.UTF-8):	Recursos catalans per Firefox
+Summary(es.UTF-8):	Recursos catalanes para Firefox
+Summary(pl.UTF-8):	Katalońskie pliki językowe dla Firefoksa
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0.2
+Version:	3.0.5
 Release:	1
-License:	GPL
+License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/%{_lang}.xpi
-# Source0-md5:	d274b22e13c8247e8e7c02f89a3a2e41
+# Source0-md5:	2f07344aa1c82ef333b4c2e8f85e4bb5
 URL:		http://www.softcatala.org/projectes/mozilla/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
@@ -21,16 +21,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_firefoxdir}/chrome
 
 %description
-Catalan resources for Mozilla-firefox.
+Catalan resources for Firefox.
 
 %description -l ca.UTF-8
-Recursos catalans per Mozilla-firefox.
+Recursos catalans per Firefox.
 
 %description -l es.UTF-8
-Recursos catalanes para Mozilla-firefox.
+Recursos catalanes para Firefox.
 
 %description -l pl.UTF-8
-Katalońskie pliki językowe dla Mozilli-firefox.
+Katalońskie pliki językowe dla Firefoksa.
 
 %prep
 
